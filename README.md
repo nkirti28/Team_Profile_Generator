@@ -5,6 +5,7 @@
 ## Table-of-Contents
 
 - [Description](#description)
+- [User-Story](#user-story)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -15,7 +16,7 @@
 
 Team profile generator is a node command line application that takes in information about employees webpage that displays summaries for each person.using the Inquirer package and generates an HTML webpage that summarizes for each person.
 
-## [User Story]
+## [User Story](#table-of-contents)
 
 AS A manager
 I WANT to generate a webpage that displays my team's basic info
