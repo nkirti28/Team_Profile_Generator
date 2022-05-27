@@ -5,7 +5,7 @@
 ## Table-of-Contents
 
 - [Description](#description)
-- [User-Story](#user-story)
+- [UserStory](#user-story)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
@@ -14,7 +14,8 @@
 
 ## [Description](#table-of-contents)
 
-Team profile generator is a node command line application that takes in information about employees webpage that displays summaries for each person.using the Inquirer package and generates an HTML webpage that summarizes for each person.
+Team profile generator is a node command line application that takes in information about employees ebpage that displays summaries for each person.using the Inquirer package and generates an HTML webpage that summarizes for each person
+Using this application it displays general information of employees and also easy to access their emails and github profiles.
 
 ## [User Story](#table-of-contents)
 
@@ -24,34 +25,17 @@ SO THAT I have quick access to their emails and GitHub profiles
 
 ## [Installation](#table-of-contents)
 
-- Clone this repository to use this application.
-- Navigate to the project folder. To install necessary dependencies, run  
-  the following command :
-
-  npm i
-
-- Run this command to check all tests pass:
-
-  npm run test
-
-- The application will be invoked with the following command:
-
-  node app.js
+Clone this repository to use this application.
 
 ## [Usage](#table-of-contents)
 
-- Run commands listed in Installation.
-- Running node app.js command will prompt user or manager series of  
-  questions to build team.
-- Once user finished building team, a HTML page 'team.html' will be  
-  generated in the 'output' folder.
-- Open this HTML file in the browser to see your team page.
+Run commands listed in Installation.
 
 For more information on how to add screenshots for examples, visit the following website:
 
 [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
 
-![Screenshots](demo/Team_Profile.gif)
+![Screenshots](demo/team_profile_generator.gif)
 
 ## [License](#table-of-contents)
 
@@ -64,7 +48,7 @@ Thank you for your interest in helping out; however, I will not be accepting con
 
 ## [Tests](#table-of-contents)
 
-npm tests with jest package module
+npm tests with jest package modeule
 
 ## [Questions](#table-of-contents)
 
