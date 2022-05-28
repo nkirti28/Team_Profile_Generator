@@ -23,7 +23,7 @@ describe("Engineer", () => {
       "nkirti28"
     );
 
-    expect(engineer.empGitHub).toEqual(
+    expect(engineer.getGitHubName()).toEqual(
       expect.stringContaining(engineer.empGitHub.toString())
     );
   });

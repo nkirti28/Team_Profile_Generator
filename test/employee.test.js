@@ -29,7 +29,7 @@ describe("Employee", () => {
     const employee = new Employee("Kirti", 34, "nalawade.kirti@gmail.com");
 
     expect(employee.getEmail()).toEqual(
-      expect.stringContaining(employee.email.toString())
+      expect.stringContaining(employee.empEmail.toString())
     );
   });
 

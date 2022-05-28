@@ -12,7 +12,7 @@ describe("Manager", () => {
       "nkirti28"
     );
 
-    expect(manager.empGitHub).toEqual(expect.any(String));
+    expect(manager.githubUsername).toEqual(expect.any(String));
   });
 
   // gets github_username from getGithub()
@@ -24,8 +24,8 @@ describe("Manager", () => {
       "nkirti28"
     );
 
-    expect(manager.empGitHub).toEqual(
-      expect.stringContaining(manager.empGitHub.toString())
+    expect(manager.getGitHubName()).toEqual(
+      expect.stringContaining(manager.githubUsername.toString())
     );
   });
 
