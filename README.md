@@ -35,7 +35,9 @@ For more information on how to add screenshots for examples, visit the following
 
 [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
 
-![Screenshots](demo/team_profile_generator.gif)
+![Demo](./demo/Team_Profile_Generator.gif)
+
+![Screenshots](./demo/Team%20Profile-HTML.gif)
 
 ## [License](#table-of-contents)
 

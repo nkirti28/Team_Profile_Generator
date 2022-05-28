@@ -11,11 +11,11 @@ describe("Intern", () => {
       "nkirti28"
     );
 
-    expect(intern.empGitHub).toEqual(expect.any(String));
+    expect(intern.school).toEqual(expect.any(String));
   });
 
-  // gets github_username from getGithub()
-  test("gets github username of Intern", () => {
+  // gets school from getSchool()
+  test("gets school of Intern", () => {
     const intern = new Intern(
       "Kirti",
       34,
@@ -23,8 +23,8 @@ describe("Intern", () => {
       "nkirti28"
     );
 
-    expect(intern.getGitHubName()).toEqual(
-      expect.stringContaining(intern.empGitHub.toString())
+    expect(intern.getSchool()).toEqual(
+      expect.stringContaining(intern.school.toString())
     );
   });
 

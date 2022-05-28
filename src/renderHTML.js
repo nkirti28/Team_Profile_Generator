@@ -9,7 +9,7 @@ const renderManagerCard = function (manager) {
             <div class="card-body">
                 <p class="id">ID: ${manager.empID}</p>
                 <p class="email">Email: <a href="mailto:${manager.empEmail}">${manager.empEmail}</a></p>
-                <p class="department">Department: ${manager.department}</p>
+                <p class="officeNumber">Office Number: ${manager.officeNumber}</p>
             </div>
         </div>
     </div>`;
@@ -43,7 +43,7 @@ const renderInternCard = function (intern) {
             <div class="card-body">
                 <p class="id">ID: ${intern.empID}</p>
                 <p class="email">Email: <a href="mailto:${intern.empEmail}">${intern.empEmail}</a></p>
-                <p class="github">Github: <a href="https://github.com/${intern.empGitHub}">${intern.empGitHub}</a></p>           
+                <p class="school">School: ${intern.school}</p>           
             </div>
         </div>
     </div>`;

@@ -59,21 +59,21 @@ const addManager = () => {
       },
       {
         type: "input",
-        name: "department",
-        message: "What is the department?",
-        validate: (deptInput) => {
-          if (deptInput) {
-            return true;
-          } else {
-            console.log("Please enter the manager's Department!");
+        name: "officeNumber",
+        message: "What is the office number of Manager?",
+        validate: (officeInput) => {
+          if (isNaN(officeInput)) {
+            console.log("Please enter the manager's Office number!");
             return false;
+          } else {
+            return true;
           }
         },
       },
     ])
     .then((managerInput) => {
-      const { name, id, email, department } = managerInput;
-      const manager = new Manager(name, id, email, department);
+      const { name, id, email, officeNumber } = managerInput;
+      const manager = new Manager(name, id, email, officeNumber);
 
       teamArray.push(manager);
       console.log(manager);
@@ -139,7 +139,7 @@ const addEmployee = () => {
         type: "input",
         name: "github",
         message: "Please enter the employee's github username.",
-        when: (input) => input.role === "Engineer" || input.role === "Intern",
+        when: (input) => input.role === "Engineer",
         validate: (nameInput) => {
           if (nameInput) {
             return true;
@@ -148,7 +148,19 @@ const addEmployee = () => {
           }
         },
       },
-
+      {
+        type: "input",
+        name: "school",
+        message: "Please enter the employee's school",
+        when: (input) => input.role === "Intern",
+        validate: (nameInput) => {
+          if (nameInput) {
+            return true;
+          } else {
+            console.log("Please enter the employee's school!");
+          }
+        },
+      },
       {
         type: "confirm",
         name: "confirmAddEmployee",
@@ -159,7 +171,8 @@ const addEmployee = () => {
     .then((employeeData) => {
       // data for employee types
 
-      let { name, id, email, role, github, confirmAddEmployee } = employeeData;
+      let { name, id, email, role, github, school, confirmAddEmployee } =
+        employeeData;
       let employee;
 
       if (role === "Engineer") {
@@ -167,7 +180,7 @@ const addEmployee = () => {
 
         console.log(employee);
       } else if (role === "Intern") {
-        employee = new Intern(name, id, email, github);
+        employee = new Intern(name, id, email, school);
 
         console.log(employee);
       }
