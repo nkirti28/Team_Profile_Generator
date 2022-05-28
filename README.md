@@ -50,7 +50,7 @@ Thank you for your interest in helping out; however, I will not be accepting con
 
 ## [Tests](#table-of-contents)
 
-npm tests with jest package modeule
+npm tests with jest package module
 
 ## [Questions](#table-of-contents)
 
