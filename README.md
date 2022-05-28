@@ -37,7 +37,7 @@ For more information on how to add screenshots for examples, visit the following
 
 ![Demo](./demo/Team_Profile_Generator.gif)
 
-![Screenshots](./demo/Team%20Profile.gif)
+![Screenshots](./demo/Team_Profile.gif)
 
 ## [License](#table-of-contents)
 
