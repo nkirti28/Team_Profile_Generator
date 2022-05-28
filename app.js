@@ -57,10 +57,23 @@ const addManager = () => {
           }
         },
       },
+      {
+        type: "input",
+        name: "department",
+        message: "What is the department?",
+        validate: (deptInput) => {
+          if (deptInput) {
+            return true;
+          } else {
+            console.log("Please enter the manager's Department!");
+            return false;
+          }
+        },
+      },
     ])
     .then((managerInput) => {
-      const { name, id, email } = managerInput;
-      const manager = new Manager(name, id, email);
+      const { name, id, email, department } = managerInput;
+      const manager = new Manager(name, id, email, department);
 
       teamArray.push(manager);
       console.log(manager);
@@ -126,7 +139,7 @@ const addEmployee = () => {
         type: "input",
         name: "github",
         message: "Please enter the employee's github username.",
-        when: (input) => input.role === "Engineer",
+        when: (input) => input.role === "Engineer" || input.role === "Intern",
         validate: (nameInput) => {
           if (nameInput) {
             return true;
@@ -154,7 +167,7 @@ const addEmployee = () => {
 
         console.log(employee);
       } else if (role === "Intern") {
-        employee = new Intern(name, id, email, school);
+        employee = new Intern(name, id, email, github);
 
         console.log(employee);
       }

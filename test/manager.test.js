@@ -5,38 +5,23 @@ const Manager = require("../lib/Manager");
 describe("Manager", () => {
   // creates employee object
   test("creates an manager object", () => {
-    const manager = new Manager(
-      "Kirti",
-      34,
-      "nalawade.kirti@gmail.com",
-      "nkirti28"
-    );
+    const manager = new Manager("Kirti", 34, "nalawade.kirti@gmail.com", "IT");
 
-    expect(manager.githubUsername).toEqual(expect.any(String));
+    expect(manager.department).toEqual(expect.any(String));
   });
 
-  // gets github_username from getGithub()
+  // gets department from getDepartment()
   test("gets github username of manager", () => {
-    const manager = new Manager(
-      "Kirti",
-      34,
-      "nalawade.kirti@gmail.com",
-      "nkirti28"
-    );
+    const manager = new Manager("Kirti", 34, "nalawade.kirti@gmail.com", "IT");
 
-    expect(manager.getGitHubName()).toEqual(
-      expect.stringContaining(manager.githubUsername.toString())
+    expect(manager.getDepartment()).toEqual(
+      expect.stringContaining(manager.department.toString())
     );
   });
 
   // gets role from getRole()
   test("gets role of manager", () => {
-    const manager = new Manager(
-      "Kirti",
-      34,
-      "nalawade.kirti@gmail.com",
-      "nirti28"
-    );
+    const manager = new Manager("Kirti", 34, "nalawade.kirti@gmail.com", "IT");
 
     expect(manager.getRole()).toEqual("Manager");
   });
