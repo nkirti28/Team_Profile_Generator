@@ -22,6 +22,8 @@
   "homepage": "https://github.com/nkirti28/Team_Profile_Generator#readme",
   "dependencies": {
     "inquirer": "^8.2.4",
-    "jest": "^28.1.0"
+    "jest": "^28.1.0",
+    "material-design-icons": "^3.0.1",
+    "requirer": "^0.0.4"
   }
 }

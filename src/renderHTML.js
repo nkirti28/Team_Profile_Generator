@@ -21,7 +21,7 @@ const renderEngineerCard = function (engineer) {
         <div class="card h-100">
             <div class="card-header">
                 <h4>${engineer.empName}</h4>
-                <h6>Engineer</h6><i class="material-icons">content-paste</i>
+                <h6>Engineer</h6><i class="material-icons">account_box</i>
             </div>
             <div class="card-body">
                 <p class="id">ID: ${engineer.empID}</p>
